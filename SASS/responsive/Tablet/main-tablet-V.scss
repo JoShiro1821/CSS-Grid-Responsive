@@ -1,0 +1,58 @@
+@use "../../tools/mixins/mixins.scss" as *;
+@use "../../tools/variables/variables.scss" as *;
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        .item-1{
+            
+            grid-row: 5 / 10;
+            grid-column: 1 / 2;
+        }
+    
+        .item-2{
+           
+            grid-row: 7 / 9;
+            grid-column: 1 / 4;
+           
+        }
+    
+        .item-3{
+            
+            grid-column: 5 / 8;
+            grid-row: 6 / 11;
+        }
+    
+        .item-4{
+            grid-column: 6 / 9;
+            grid-row: 5 / 8;
+        }
+    
+        .item-5{
+            grid-column: 7 / 10;
+            grid-row: 3 / 9;
+            
+           
+        }
+    
+        .item-6{
+            
+            grid-column: 6 / 9;
+            grid-row: 3 / 5;
+            
+    
+        }
+    
+        .item-7{
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+    
+        .item-8{
+            
+            grid-column-start: 3;
+            grid-row: 2 / 4;
+           
+        }
+    }
+}

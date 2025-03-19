@@ -1,0 +1,19 @@
+@use "../tools/variables/variables.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  inset: 0;
+  background-image: linear-gradient(to right bottom, #250537, #361d5e, #3f368a, #3c53ba, #1272eb);
+  height: 100vh;
+}
+
+html{
+  font-size: 62.5%;
+}

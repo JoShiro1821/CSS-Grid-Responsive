@@ -1,0 +1,275 @@
+  
+@use "../tools/mixins/mixins.scss" as *;
+@use "../tools/variables/variables.scss" as *;
+
+// .container{
+//     @include flexbox(null, null, center, center, null);
+//     height: 100vh;
+//     .head{
+//         width: 100px;
+//         height: 150px;
+//         background-color: $skin;
+//         border-radius: 50px;
+//         position: relative;
+//         .nose{
+//             width: 25px;
+//             height: 25px;
+//             background-color: $skin;
+//             border-radius: 15px;
+//             position: absolute;
+//             top: 80px;
+//             left: 40px;
+//             z-index: 1001;
+
+//         }
+
+//         .ears-left{
+//             width: 30px;
+//             height: 30px;
+//             background-color: $skin;
+//             position: absolute;
+//             border-radius: 20px;
+//             left: -10px;
+//             top: 50px;
+
+//         }
+//         .ears-right{
+//             width: 30px;
+//             height: 30px;
+//             background-color: $skin;
+//             position: absolute;
+//             border-radius: 20px;
+//             right: -10px;
+//             top: 50px;
+//         }
+//         .eye-left{
+//             width: 20px;
+//             height: 20px;
+//             background: $white;
+//             position: absolute;
+//             top: 60px;
+//             left: 32px;
+//             border-radius: 50%;
+//             .black-point{
+//                 position: absolute;
+//                 background: $black;
+//                 border-radius: 50%;
+//                 width: 10px;
+//                 height: 10px;
+//                 top: 5px;
+//                 left: 5px;
+//             }
+//         }
+          
+//         .eye-right{
+//             position: absolute;
+//             width: 20px;
+//             height: 20px;
+//             background: $white;
+//             top: 60px;
+//             left: 52px;
+//             border-radius: 50%;
+//             .black-point{
+//                 position: absolute;
+//                 background: $black;
+//                 border-radius: 50%;
+//                 width: 10px;
+//                 height: 10px;
+//                 top: 5px;
+//                 left: 5px;
+//             }
+//         }
+
+//         .bottom{
+//             position: absolute;
+//             background: $black;
+//             width: 100px;
+//             height: 60px;
+//             top: 90px;
+//             border-radius: 50px;
+//             z-index: 2;
+             
+//         }
+          
+//         .mouth{
+//             width: 50px;
+//             height: 20px;
+//             background-color: $red;
+//             border-radius: 50%;
+//             justify-self: center;
+//             margin-top: 20px;
+//         }
+          
+//         .teeth{
+//             width: 50px;
+//             height: 8px;
+//             background: $white;
+//             border-radius: 5px;
+            
+//         }
+          
+//         .neck{
+//             width: 30px;
+//             height: 80px;
+//             background-color: $skin;
+//             position: absolute;
+//             left: 35px;
+//             top: 100px;
+//             z-index: 1;
+            
+//         }
+        
+
+//     }
+    
+// }
+
+
+
+// .grid-container{
+//     justify-content: center;
+//     border: 10px solid #F9BE63;
+//     // // .grid-container__elements{
+//     // //     display: grid;
+//     // //     width: 800px;
+//     // //     height: 500px;
+//     // //     grid-template-columns: repeat(2, 200px);
+//     // //     grid-template-rows: repeat(2, 200px);
+//     // //     justify-content: space-evenly;
+//     // //     align-content: center;
+//     // //     .grid-container__items{
+//     // //         background: papayawhip;
+//     // //         border: 4px solid hotpink;
+
+//     // //     }
+//     // // }
+    
+//     .grid-container__elements{
+//         width: 800px;
+//         height: 500px;
+//         display: grid;
+//         grid-template-columns: repeat(3, minxmax(200px, 300px));
+
+//     }
+// }
+
+
+// .cards{
+//     background: papayawhip;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+//     .cards__items{
+
+//         background-color: papayawhip;
+//         border: 4px solid hotpink;
+//         width: 100%;
+//         height: 50px;
+//     }
+// }
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) ;
+    height: 100vh;
+
+    .item-1{
+        background: $yellow;
+        grid-row: 6 / 11;
+        grid-column: 1 / 2;
+    }
+
+    .item-2{
+        background: $blue;
+        grid-row: 7 / 9;
+        grid-column: 1 / 3;
+        opacity: 50%;
+    }
+
+    .item-3{
+        background-color: hotpink;
+        grid-column: 3 / 6;
+        grid-row: 6 / 11;
+    }
+
+    .item-4{
+        border: 5px solid hotpink;
+        grid-column: 3 / 5;
+        grid-row: 4 / 7;
+    }
+
+    .item-5{
+        border: 5px solid hotpink;
+        grid-column: 2 / 4;
+        grid-row: 3 /  6;
+        
+       
+    }
+
+    .item-6{
+        font-size: 2rem;
+        color: $white;
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .item-7{
+        background: hotpink;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .item-8{
+        font-size: 2rem;
+        color: $white;
+        grid-column-start: 1;
+        grid-row: 2 / 4;
+        display: grid;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    // .item-one{
+    //     background-image: url("../../Assets/images/svg/animal-1.svg");
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 100%;
+    //     place-self: center;
+    //     background-color: $yellow;
+    //     border-radius: 50px;
+
+    // }
+
+    // .item-two{
+    //     background-image: url("../../Assets/images/svg/animal-2.svg");
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 100%;
+    //     place-self: center;
+    //     background-color: $dark-pink;
+    //     border-radius: 50px;
+
+
+
+    // }
+
+    // .item-three{
+    //     background-image: url("../../Assets/images/svg/animal-3.svg");
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 100%;
+    //     place-self: center;
+    //     background-color: $pink;
+    //     border-radius: 50px;
+    //     grid-column: 1/ 3;
+    // }
+}
